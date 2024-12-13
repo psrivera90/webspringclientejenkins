@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-alpine
+COPY target/webcliente-1.jar webcliente-1.jar
+ENTRYPOINT ["java", "-jar", "/webcliente-1.jar"]
+EXPOSE 8084
